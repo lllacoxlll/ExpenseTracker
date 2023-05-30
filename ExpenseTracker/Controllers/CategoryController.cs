@@ -74,9 +74,5 @@ namespace ExpenseTracker.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoryExists(int id)
-        {
-          return (_context.Categories?.Any(e => e.CategoryId == id)).GetValueOrDefault();
-        }
     }
 }

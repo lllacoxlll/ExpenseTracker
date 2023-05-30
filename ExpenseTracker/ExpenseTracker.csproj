@@ -20,4 +20,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
     <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="21.2.6" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Dashboard\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Dashboard\" />
+  </ItemGroup>
 </Project>

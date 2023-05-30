@@ -2,6 +2,8 @@
 
 @{
     ViewData["PageTitle"] = "Categories";
+    ViewData["PageActionText"] = "+ New Category";
+    ViewData["PageActionUrl"] = "/Category/AddOrEdit";
 }
 
 @*
@@ -64,16 +66,15 @@
         <div class="widget h-100 d-flex justify-content-center align-items-center" style="background-color:#212b36">
             <i class="fa-solid fa-shapes fa-2xl"></i>
         </div>
-
     </div>
 </div>
 
 
 <script id="typeColumnTemplate" type="text/x-template">
     ${if(Type=="Income")}
-        <span class="badge bg-success">${Type}</span>
+    <span class="badge bg-success">${Type}</span>
     ${else}
-        <span class="badge bg-danger">${Type}</span>
+    <span class="badge bg-danger">${Type}</span>
     ${/if}
 </script>
 

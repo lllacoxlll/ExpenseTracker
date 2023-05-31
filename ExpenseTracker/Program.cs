@@ -13,6 +13,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(Environment.GetEnvironmentVariable("ExpenseTracker_DevConnection"),
     new MySqlServerVersion(new Version(8, 0, 32))));
 
+//Register Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2VFhiQllPd11dXmJWd1p/THNYflR1fV9DaUwxOX1dQl9gSXtQd0RmXHxbd3xRR2A=");
 
 var app = builder.Build();
 

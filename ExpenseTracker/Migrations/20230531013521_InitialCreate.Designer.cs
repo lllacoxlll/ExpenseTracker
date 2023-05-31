@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ExpenseTracker.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230529151300_InitialCreate")]
+    [Migration("20230531013521_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
